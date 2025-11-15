@@ -9,7 +9,7 @@ A hands-on demo showing how Terraform state works and why it contains sensitive 
 ### Option 1: Cloud Shell (Easiest - No Setup Needed!)
 ```bash
 # Already authenticated in Cloud Shell!
-git clone <YOUR_REPO_URL>
+git clone https://github.com/oseniabdulhaleem/terraform-state-demo.git
 cd terraform-state-demo
 ```
 
@@ -30,7 +30,7 @@ gcloud config set project YOUR_PROJECT_ID
 
 **Get the code:**
 ```bash
-git clone <YOUR_REPO_URL>
+git clone https://github.com/oseniabdulhaleem/terraform-state-demo.git
 cd terraform-state-demo
 ```
 
@@ -122,38 +122,6 @@ terraform destroy
 
 ---
 
-## 📚 What You'll Learn
-
-✅ How Terraform state tracks resources  
-✅ Why state files contain secrets in plain text  
-✅ Essential state management commands  
-✅ How to import existing resources  
-✅ Why remote backends are critical for security  
-
----
-
-## 🆘 Troubleshooting
-
-**"Permission denied" error:**
-```bash
-gcloud auth application-default login
-```
-
-**"API not enabled" error:**
-```bash
-gcloud services enable <SERVICE_NAME>
-```
-
-**SQL instance taking too long:**
-- Comment out the SQL resources in `main.tf` (lines 40-78)
-- The demo works fine with just the bucket, VM, and secret
-
-**"Project not set" error:**
-```bash
-gcloud config set project YOUR_PROJECT_ID
-```
-
----
 
 ## 🎓 Key Takeaway
 
